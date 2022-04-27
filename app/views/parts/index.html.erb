@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Parts</h1>
+<div id="parts" class="container">
+  <h1>Parts</h1>
 
-<div id="parts">
+  <div class="row">
   <% @parts.each do |part| %>
-    <%= render part %>
-    <p>
-      <%= link_to "Show this part", part %>
-    </p>
+    <div class="col-md-3">
+      <div class="part-card mb-4">
+         <%= image_tag part.image.url, class: "part-show" if part.image? %>
+
+          <%= render part %>
+          <p>
+            <%= link_to "Show this part", part %>
+          </p>
+      </div><!-- part-card-->
+      </div><!-- col-md-3-->
   <% end %>
+</div><!-- row-->
 </div>
 
-<%= link_to "New part", new_part_path %>
+<%= link_to "New Part", new_part_path %>

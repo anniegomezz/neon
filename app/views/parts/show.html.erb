@@ -1,4 +1,9 @@
 <p style="color: green"><%= notice %></p>
+<% if @part.image? %>
+
+<%= image_tag @part.image.url, class: "part-show" %>
+
+<% end %>
 
 <%= render @part %>
 
