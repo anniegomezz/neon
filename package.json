@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cocoon": "https://github.com/nathanvda/cocoon.git"
+  }
+}
