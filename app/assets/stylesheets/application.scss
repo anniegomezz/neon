@@ -16,21 +16,131 @@
 
 @import "bootstrap";
 
+
+/* GLOBAL STYLES */
+
+html{
+    font-size: 16px;
+}
+
+
+body {
+  background-color: #a891ed;
+}
+
+.btn-primary{
+    background-color: #a242cb;
+    border: none;
+    border-radius:  30px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.btn-primary:hover{
+    background-color: #e9e1eb;
+    color: #a242cb;
+}
+
+.btn-secondary{
+    background-color: #a242cb;
+    border: none;
+    border-radius:  30px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+}
+
+.btn-secondary:hover{
+    background-color: #e9e1eb;
+    color: #a242cb;
+}
+
+/* INDEX VIEW STYLES */
+
+.part-card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+.part-card h2{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.part-card p{
+    text-align: center;
+    font-size: 1rem;
+}
+/*
 img.part-show {
     width: 100%;
     height: 600px;
     object-fit: cover;
     object-position: center center;
 }
+*/
 
 .part-card {
     background: whitesmoke;
+    background-color: #eee6ff;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 
 .part-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
+img.part-show{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    align-content: center;
+}
+
+/* SHOW VIEW STYLES */
+/*
+.show-hero{
+    height: 450px;
+    position: relative;
+}
+
+.show-hero-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+*/
+
+img.part-index{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    align-content: center;
+}
+
+
+
+
+
+
+
+

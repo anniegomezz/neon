@@ -3,15 +3,17 @@
 <div id="parts" class="container">
   <h1>Parts</h1>
 
-  <div class="row">
+  <%= link_to "New Part", new_part_path, :class =>"btn btn-primary" %>
+
+  <div class="row pt-5">
   <% @parts.each do |part| %>
     <div class="col-md-3">
       <div class="part-card mb-4">
-         <%= image_tag part.image.url, class: "part-show" if part.image? %>
+         <%= image_tag part.image.url, class: "part-card" if part.image? %>
 
           <%= render part %>
           <p>
-            <%= link_to "Show this part", part %>
+            <%= link_to "View Part", part, :class => "btn btn-secondary" %>
           </p>
       </div><!-- part-card-->
       </div><!-- col-md-3-->
@@ -19,4 +21,3 @@
 </div><!-- row-->
 </div>
 
-<%= link_to "New Part", new_part_path %>
