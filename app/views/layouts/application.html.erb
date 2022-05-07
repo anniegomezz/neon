@@ -11,27 +11,29 @@
   </head>
 
  <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded"> 
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <%= link_to "Neon", root_path, class: 'navbar-brand' %>
-
-
-    <ul class="navbar-nav navbar-right">
-
-      <li><%= link_to "About", pages_about_path %></li><% if user_signed_in? %>
-      <%= link_to 'Parts List', parts_path, :class => 'navbar-link' %>
-      <%= link_to 'Part Categories', pages_intake_form_path, :class => 'navbar-link' %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   <div class="navbar-nav">
+  <a class="nav-item nav-link active" <%= link_to "About", pages_about_path %> <span class="sr-only">(current)</span></a>
+  <% if user_signed_in? %>
+      <a class="nav-item nav-link active" <%= link_to 'Parts List', parts_path, :class => 'navbar-link' %><span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active"<%= link_to 'Part Categories', pages_intake_form_path, :class => 'navbar-link' %><span class="sr-only">(current)</span></a>
+      
     Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
+  <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>    
-
-    </ul>
-
+  <% end %>   
+    </div>
+  </div>
 </nav>
+
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>

@@ -1,20 +1,30 @@
-<h1>Intake Form</h1>
+<head>
+    <style>
+        .tab {
+            display: inline-block;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: deeppink;"><span class="tab"></span>Part Categories</h1>
 
-<h2>Cheap Parts</h2>
+    <h2 style="color: royalblue;"><span class="tab"></span>Cheap Parts</h2>
  <% @cheapparts.each do |cheap| %>
  	<li><%= cheap.name %> - $<%= cheap.price %></li>
 <% end %>
 
-<h2>Choose Motherboard</h2>
+<h2 style="color: royalblue;"><span class="tab"></span>Choose Motherboard</h2>
 <ul>
   <% @motherboard_parts.each do |mbpart| %>
 		<li><%= mbpart.name %> - $<%= mbpart.price %></li>
 	<% end %>
 </ul>
-	<h2>Choose RAM</h2>
+	<h2 style="color: royalblue;"><span class="tab"></span>Choose RAM</h2>
 	<ul>
   <% @ram_parts.each do |rampart| %>
 		<li><%= rampart.name %> - $<%= rampart.price %></li>
 	<% end %>
 
 </ul>
+</body>
