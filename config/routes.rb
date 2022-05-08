@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
     root 'pages#landing'
-get 'pages/intake_form'
+  get 'pages/intake_form'
   get 'pages/about'
   get 'landing/about'
+  get 'pages/part_info'
 end

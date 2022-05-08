@@ -9,22 +9,94 @@
 <body>
     <h1 style="color: deeppink;"><span class="tab"></span>Part Categories</h1>
 
-    <h2 style="color: royalblue;"><span class="tab"></span>Cheap Parts</h2>
- <% @cheapparts.each do |cheap| %>
- 	<li><%= cheap.name %> - $<%= cheap.price %></li>
-<% end %>
-
-<h2 style="color: royalblue;"><span class="tab"></span>Choose Motherboard</h2>
+	<h2 style="color: royalblue;"><span class="tab"></span>Motherboards</h2>
 <ul>
   <% @motherboard_parts.each do |mbpart| %>
 		<li><%= mbpart.name %> - $<%= mbpart.price %></li>
 	<% end %>
 </ul>
-	<h2 style="color: royalblue;"><span class="tab"></span>Choose RAM</h2>
-	<ul>
-  <% @ram_parts.each do |rampart| %>
-		<li><%= rampart.name %> - $<%= rampart.price %></li>
-	<% end %>
 
+<h2 style="color: royalblue;"><span class="tab"></span>Storage</h2>
+<ul>
+  <% @storage_parts.each do |storagepart| %>
+		<li><%= storagepart.name %> - $<%= storagepart.price %></li>
+	<% end %>
 </ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Cooling</h2>
+<ul>
+  <% @cooling_parts.each do |coolingpart| %>
+		<li><%= coolingpart.name %> - $<%= coolingpart.price %></li>
+	<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Memory</h2>
+<ul>
+  <% @memory_parts.each do |memorypart| %>
+		<li><%= memorypart.name %> - $<%= memorypart.price %></li>
+	<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>CPUs</h2>
+<ul>
+  <% @cpu_parts.each do |cpupart| %>
+		<li><%= cpupart.name %> - $<%= cpupart.price %></li>
+	<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Power Supplies</h2>
+<ul>
+  <% @power_parts.each do |powerpart| %>
+		<li><%= powerpart.name %> - $<%= powerpart.price %></li>
+	<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Graphics Cards</h2>
+<ul>
+  <% @graphics_parts.each do |graphicspart| %>
+		<li><%= graphicspart.name %> - $<%= graphicspart.price %></li>
+	<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Editing Build Parts</h2>
+<ul>
+ <% @editing_parts.each do |editing| %>
+ 	<li><%= editing.name %> - $<%= editing.price %></li>
+<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Casual Gaming Build Parts</h2>
+<ul>
+ <% @casualgaming_parts.each do |casualg| %>
+ 	<li><%= casualg.name %> - $<%= casualg.price %></li>
+<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Streaming/Pro Gaming Build Parts</h2>
+<ul>
+ <% @streaming_parts.each do |streaming| %>
+ 	<li><%= streaming.name %> - $<%= streaming.price %></li>
+<% end %>
+</ul>
+
+<h2 style="color: royalblue;"><span class="tab"></span>Programming Build Parts</h2>
+<ul>
+ <% @programming_parts.each do |programming| %>
+ 	<li><%= programming.name %> - $<%= programming.price %></li>
+<% end %>
+</ul>
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
